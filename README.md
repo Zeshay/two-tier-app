@@ -89,5 +89,3 @@ Before you begin, make sure you have the following installed:
 ## 📬 Contact
 <pre>For questions, feedback, or contributions, feel free to open an issue or submit a pull request.</pre>
 ```
-
-
