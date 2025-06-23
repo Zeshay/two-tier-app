@@ -72,7 +72,7 @@ Before you begin, make sure you have the following installed:
    ```
 5. Interact with the app:
 
-   - Visit http://<ec2-instance-ip> to see the frontend. You can submit new messages using the form.
+   - Visit http://ec2-instance-ip to see the frontend. You can submit new messages using the form.
 
 
 ## Notes
