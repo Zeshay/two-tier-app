@@ -50,8 +50,9 @@ Before you begin, make sure you have the following installed:
    ```
 
 2. Access the Flask app in your web browser:
-
-   - http://<ec2-instance_ip>:5000
+ ```bash
+   - http://ec2-instance_ip:5000
+   ```
 
 3. Create the `messages` table in your MySQL database:
 
