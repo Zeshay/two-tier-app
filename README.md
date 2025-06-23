@@ -86,9 +86,8 @@ Before you begin, make sure you have the following installed:
 ##  Notes License
 <pre>This project is open-source and available under the MIT License.</pre>
 
-## 📬 Contact**
+## 📬 Contact
 <pre>For questions, feedback, or contributions, feel free to open an issue or submit a pull request.</pre>
-
 ```
 
 
