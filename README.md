@@ -41,10 +41,12 @@ Before you begin, make sure you have the following installed:
 
 ## Usage
 
-1. Start the containers using Docker Compose:
+1. Update System and Install Required Packages:
 
    ```bash
-   docker-compose up --build
+   sudo apt update && sudo apt upgrade -y
+   sudo apt install python3-pip python3-venv mysql-server -y
+
    ```
 
 2. Access the Flask app in your web browser:
@@ -61,8 +63,13 @@ Before you begin, make sure you have the following installed:
          message TEXT
      );
      ```
+4. Run the Flask App:
 
-4. Interact with the app:
+   ```bash
+   python app.py --host=0.0.0.0 --port=5000
+
+   ```
+5. Interact with the app:
 
    - Visit http://<ec2-instance-ip> to see the frontend. You can submit new messages using the form.
 
