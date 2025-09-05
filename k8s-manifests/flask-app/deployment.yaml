@@ -17,6 +17,8 @@ spec:
       - name: flask
         image: misacademy/two-tier:v1
         env:
+          - name: MYSQL_HOST
+            value: "mysql-service.mysql-db.svc.cluster.local"
           - name: MYSQL_PASSWORD
             value: "admin"
           - name: MYSQL_USER
