@@ -1,0 +1,25 @@
+✅ DB Config:
+Host: 127.0.0.1
+User: root
+Pass: yourpassword
+DB:   mysql
+✅ Table created or already exists.
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.20.147:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 717-724-056
+182.190.183.87 - - [29/Oct/2025 17:55:57] "GET / HTTP/1.1" 200 -
+182.190.183.87 - - [29/Oct/2025 17:59:22] "POST /submit HTTP/1.1" 200 -
+182.190.183.87 - - [29/Oct/2025 18:04:47] "POST /submit HTTP/1.1" 200 -
+182.190.183.87 - - [29/Oct/2025 18:06:47] "POST /submit HTTP/1.1" 200 -
+182.190.183.87 - - [29/Oct/2025 18:10:16] "GET / HTTP/1.1" 200 -
+182.190.183.87 - - [29/Oct/2025 18:10:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
