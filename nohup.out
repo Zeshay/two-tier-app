@@ -23,3 +23,16 @@ DB:   mysql
 182.190.183.87 - - [29/Oct/2025 18:06:47] "POST /submit HTTP/1.1" 200 -
 182.190.183.87 - - [29/Oct/2025 18:10:16] "GET / HTTP/1.1" 200 -
 182.190.183.87 - - [29/Oct/2025 18:10:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Forwarding from 0.0.0.0:5000 -> 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+E1128 18:04:18.895239   20523 portforward.go:424] "Unhandled Error" err="an error occurred forwarding 5000 -> 5000: error forwarding port 5000 to pod 7d87f9668887a3d8033d045b99f5a00c3e9910b379148dc26d2346a9433351e0, uid : network namespace for sandbox \"7d87f9668887a3d8033d045b99f5a00c3e9910b379148dc26d2346a9433351e0\" is closed"
+E1128 18:04:18.895829   20523 portforward.go:424] "Unhandled Error" err="an error occurred forwarding 5000 -> 5000: error forwarding port 5000 to pod 7d87f9668887a3d8033d045b99f5a00c3e9910b379148dc26d2346a9433351e0, uid : network namespace for sandbox \"7d87f9668887a3d8033d045b99f5a00c3e9910b379148dc26d2346a9433351e0\" is closed"
+error: lost connection to pod
