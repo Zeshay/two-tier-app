@@ -16,9 +16,25 @@ spec:
       containers:
       - name: mysql
         image: mysql:8
-        env:
-          - name: MYSQL_ROOT_PASSWORD
-            value: rootpassword
         ports:
         - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: admin
+        - name: MYSQL_DATABASE
+          value: mysql
+        - name: MYSQL_USER
+          value: user         # optional, non-root user
+        - name: MYSQL_PASSWORD
+          value: userpassword # password for non-root user
+        - name: MYSQL_HOST
+          value: mysql-service.mysql-db.svc.cluster.local
+        - name: MYSQL_PORT
+          value: "3306"
+        volumeMounts:
+        - name: mysql-data
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-data
+        emptyDir: {}
 
