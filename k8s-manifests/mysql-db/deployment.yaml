@@ -4,7 +4,7 @@ metadata:
   name: mysql-deployment
   namespace: mysql-db
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: mysql
@@ -14,27 +14,13 @@ spec:
         app: mysql
     spec:
       containers:
-      - name: mysql
-        image: mysql:8
-        ports:
-        - containerPort: 3306
-        env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: admin
-        - name: MYSQL_DATABASE
-          value: mysql
-        - name: MYSQL_USER
-          value: user         # optional, non-root user
-        - name: MYSQL_PASSWORD
-          value: userpassword # password for non-root user
-        - name: MYSQL_HOST
-          value: mysql-service.mysql-db.svc.cluster.local
-        - name: MYSQL_PORT
-          value: "3306"
-        volumeMounts:
-        - name: mysql-data
-          mountPath: /var/lib/mysql
-      volumes:
-      - name: mysql-data
-        emptyDir: {}
+        - name: mysql
+          image: mysql:8
+          ports:
+            - containerPort: 3306
+          envFrom:
+            - secretRef:
+                name: mysql-secret
+            - configMapRef:
+                name: mysql-config
 

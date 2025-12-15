@@ -14,16 +14,13 @@ spec:
         app: flask
     spec:
       containers:
-      - name: flask
-        image: zeesha345/two-tier:v3
-        ports:
-        - containerPort: 5000
-        env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: admin
-        envFrom:
-        - secretRef:
-            name: mysql-secret
-        - configMapRef:
-            name: mysql-config
+        - name: flask
+          image: zeesha345/two-tier:v3
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - secretRef:
+                name: mysql-secret
+            - configMapRef:
+                name: mysql-config
 
